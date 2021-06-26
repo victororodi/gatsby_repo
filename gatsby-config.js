@@ -3,8 +3,25 @@ module.exports = {
     title: `Web Logo Design Company Mombasa - Mobile App Development`,
     description: `Bitcix is a digital agency that focuses in web design and mobile app development solutions.Top rated web and mobile design company in Mombasa, Kenya.`,
     author: `Bitcix Limited`,
+    siteUrl: `https://www.bitcix.co.ke`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-LDVGL3G7CB", // Google Analytics / GA
+          "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,7 +38,9 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-catch-links`,
     `gatsby-remark-prismjs`,
     {

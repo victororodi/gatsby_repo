@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Bitcix™ Limited Kenya. All Rights Reserved.
           {` `}
-          <a href="https://www.facebook.com/patentnest" target="_blank" rel="noreferrer"><Image src={facebookImage} alt="facebook page link" fluid rounded/></a> <a href="https://www.twitter.com/victororodi" target="_blank" rel="noreferrer"><Image src={twitterImage} alt="twitter page link" fluid rounded /></a>
+          <a href="https://www.facebook.com/bitcixltd" target="_blank" rel="noreferrer"><Image src={facebookImage} alt="facebook page link" fluid rounded/></a> <a href="https://www.twitter.com/bitcix" target="_blank" rel="noreferrer"><Image src={twitterImage} alt="twitter page link" fluid rounded /></a>
         </footer>
       </div>
     </>
